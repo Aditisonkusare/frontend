@@ -1,5 +1,5 @@
 // Styles
-import '@fortawesome/fontawesome-free/cdd/all/css'
+import '@fortawesome/fontawesome-free/css/all.css'
 import '@mdi/font/css/materialdesignicons.css'
 import {aliases, fa} from 'vuetify/iconsets/fa'
 import 'vuetify/styles'
