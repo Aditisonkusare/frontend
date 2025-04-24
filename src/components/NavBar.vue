@@ -1,10 +1,9 @@
 <template>
     <v-app-bar app color="#4B0082" dark flat class="px-12">
         <v-btn>
-            <v-icon color="white" left class="mr-2"> fas fa-signature</v-icon>ADITI SONKUSARE
-        </v-btn>
+            <span class="avs-initials">AVS</span></v-btn>
         <v-spacer></v-spacer>
-        <v-btn text @click="scroll('home')" class="text-yellow">Home</v-btn>
+        <v-btn text @click="scroll('home')" >Home</v-btn>
         <v-btn text @click="scroll('about')" >About</v-btn>
         <v-btn text @click="scroll('portfolio')" >Skills</v-btn>
         <v-btn text @click="scroll('services')" >Work experience</v-btn>
@@ -19,7 +18,7 @@ export default {
     methods: {
         scroll(refName) {
             const element =document.getElementById(refName);
-            element.scrollIntoView({behaviour: "smooth"});
+            element.scrollIntoView({behavior: "smooth"});
         }
     }
 
@@ -27,5 +26,17 @@ export default {
 </script>
 
 <style>
-
+.avs-initials {
+  background: white;
+  color: #4B0082;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  margin-right: 8px;
+}
 </style>
