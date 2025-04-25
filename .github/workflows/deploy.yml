@@ -35,7 +35,7 @@ jobs:
     - name: Deploy to S3
       uses: jakejarvis/s3-sync-action@v0.5.0
       with:
-        bucket: s3://aditivilassonkusare.com
+        bucket: aditivilassonkusare.com
         source_dir: './dist'
         acl: 'public-read'
       env:
