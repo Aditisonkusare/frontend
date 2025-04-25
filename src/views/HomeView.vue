@@ -78,10 +78,6 @@
                     </div>
                   </transition>
                 </section>
-                <!-- <section id="projects" class="section">
-                  <h1>Projects</h1>
-                  <p>My past work...</p>
-                </section> -->
                 <section id="experience" class="section">
                   <h1 class="text-center mb-6">EXPERIENCE</h1>
                   <v-container>
@@ -162,7 +158,7 @@ setup() {
     const skills = {
       'Programming Languages': ['Python', 'JavaScript', 'Typescript'],
       'Tools/Technologies': ['Tableau', 'Postman'],
-      'Frontend Frameworks': ['Cypress', 'CSS', 'HTML', 'VUE.JS'],
+      'Frontend Frameworks': [ 'VUE.JS', 'Cypress', 'CSS', 'HTML'],
       'DevOps & Cloud': ['Git', 'Git Actions', 'AWS Web Services'],
       'Data Analytics': ['PyTorch', 'TensorFlow', 'Keras']
     };
