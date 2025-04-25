@@ -37,4 +37,4 @@ jobs:
 
     - name: Deploy to S3
       run: |
-        aws s3 sync ./dist/ s3://aditivilassonkusare.com --acl public-read --delete
+        aws s3 sync ./dist/ s3://aditivilassonkusare.com --delete
