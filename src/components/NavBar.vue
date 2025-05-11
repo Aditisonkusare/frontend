@@ -5,9 +5,9 @@
         <v-spacer></v-spacer>
         <v-btn text @click="scroll('home')" >Home</v-btn>
         <v-btn text @click="scroll('about')" >About</v-btn>
-        <v-btn text @click="scroll('portfolio')" >Skills</v-btn>
-        <v-btn text @click="scroll('services')" >Work experience</v-btn>
-        <v-btn text @click="scroll('page')" >Projects</v-btn>
+        <v-btn text @click="scroll('skills')" >Skills</v-btn>
+        <v-btn text @click="scroll('experience')" >Work experience</v-btn>
+        <v-btn text @click="scroll('projects')" >Projects</v-btn>
         <v-btn text @click="scroll('biog')" >Education</v-btn>
         <v-btn text @click="scroll('contact')" >Contact</v-btn>
     </v-app-bar>
