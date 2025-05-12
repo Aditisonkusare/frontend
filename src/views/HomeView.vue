@@ -308,29 +308,34 @@ setup() {
   background-color: #5f2c95;
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 0%;
 }
+
 .first {
   width:100%;
   height:280px;
   text-align:center;
   padding:2rem 2rem;
 }
+
 .child {
-  display: inline-block;
+  display:inline-block;
   padding:2rem 1rem;
   vertical-align:middle;
   text-align:center;
   margin-right:8px;
 }
+
 .imgHover {
-  padding: 0 200px;
+  padding:0 5%;
 }
+
 .pre {
   width:100%;
-  height: 380px;
-  text-align: center;
-  padding: 0 200px;
-  background-color: #f5f5f5;
+  height:380px;
+  text-align:center;
+  padding:0 5%;
+  background-color:#f5f5f5;
 }
+
 .hire {
   width:100%;
   height:200px;
@@ -338,6 +343,7 @@ setup() {
   background-color: #e9e9e9;
   margin-top:-24px;
 }
+
 .section {
   padding: 2rem;
   position: relative;
@@ -361,8 +367,8 @@ setup() {
   justify-content: center;
   align-items: flex-start;
   gap: 2rem;
-  flex-wrap: nowrap; /* prevents wrapping */
-  overflow-x: auto; /* enables scroll if needed */
+  flex-wrap: wrap; 
+  overflow-x: visible;
   padding: 1rem 0;
 }
 
@@ -370,11 +376,12 @@ setup() {
   min-width: 200px;
   background-color: #f9f9f9;
   border-radius: 16px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
   padding: 1rem 1.5rem;
   text-align: center;
   flex-shrink: 0;
 }
+
 .skill-card:hover {
   transform: translateY(-4px);
 }
@@ -399,5 +406,46 @@ setup() {
   font-size: 0.95rem;
   color: #444;
 }
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .egg {
+    width: 80%;
+    height: auto;
+    margin-top: 2rem;
+  }
+
+  .child {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    padding: 1rem 0;
+  }
+
+  .first {
+    padding: 1rem;
+    height: auto;
+  }
+
+  .pre,
+  .hire,
+  .imgHover {
+    padding: 0 1rem;
+  }
+
+  .skill-card {
+    min-width: 100%;
+  }
+
+  .head {
+    padding: 1rem;
+    min-height: 260px;
+  }
+
+  .toggle-btn {
+    width: 100%;
+  }
+}
+
 </style>
 
